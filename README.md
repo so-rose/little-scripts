@@ -3,8 +3,19 @@
 ## Literally a little cache of little little-scripts!
 
 
-These are little tools that help my life along. Run each with -h for deeper info:
+These are little tools for everyday life.
 
+*Requires standard Linux tools - python3, rsync, tar - to work, as a general rule!*
+
+### General Tools:
+-**linkPath**: Call with sudo; automatically links (or deletes a link with -d) an executable to /usr/local/bin, removing any extension.
+-**syncGate**: Rsync through an ssh gateway using ssh agent forwarding. Call with gateway, target, target path, and optionally local path!
+
+### **Requires gpg**
+-**enc**: Pipe anything in, and it will encrypt it (as text) for given recipients and output on stdout.
+* Pipe into `xclip -selection c` to automatically copy to clipboard!
+
+-**decr**: Pipe encrypted data in (like from `xclip -o`), and it will check sigs & decrypt it to stdout.
 
 ### **Requires ffmpeg**
 
@@ -14,4 +25,4 @@ These are little tools that help my life along. Run each with -h for deeper info
 
 ### **Requires djv-view**
 
--**sek**: The universal sequence viewer! Point sek at directories & MOVs alike - it'll open up djv-view to play it!
+-**sek**: The universal sequence viewer! Point sek at directories & videos alike - it'll open up djv-view to play it.
